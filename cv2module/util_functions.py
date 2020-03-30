@@ -24,7 +24,7 @@ def rotate(ip_image, angle, loss=1):
     M[0, 2] += (new_W / 2) - cX
     M[1, 2] += (new_H / 2) - cY
 
-    return cv2.warpAffine(image, M, (new_W, new_H))
+    return cv2.warpAffine(ip_image, M, (new_W, new_H))
 
 
 def resize(ip_image, width, height=None):

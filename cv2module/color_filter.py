@@ -89,5 +89,5 @@ def cmask(frame):
 
 if __name__ == "__main__":
     # To test generate_mask function Import your image HERE.
-    frame = cv2.imread('./sample.jpg')
+    frame = cv2.imread('../input/watch_image.jpg')
     hsv_range, mask, res = cmask(frame)
