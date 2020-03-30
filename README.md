@@ -2,9 +2,7 @@
 
 This is a package is created to assist the smooth workflow with OpenCV by providing essentials functions such as creating Color Masks of any image/video feed or resizing and rotating it.
  
-```diff
-- The default value of the loss is 1 so it will crop out the image when it's been rotated.</pre>
-```
+
 ## Installation
 Provided you already have NumPy and OpenCV installed, the `cv2module` a package can be simply installed using `pip`.
 ```bash
