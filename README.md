@@ -1,12 +1,12 @@
-# cv2.utils
+# cv2module
 
 This is a package is created to assist the smooth workflow with OpenCV by providing essentials functions such as creating Color Masks of any image/video feed or resizing and rotating it.
  
 
 ## Installation
-Provided you already have NumPy and OpenCV installed, the `cv2.utils` a package can be simply installed using `pip`.
+Provided you already have NumPy and OpenCV installed, the `cv2module` a package can be simply installed using `pip`.
 ```bash
-$ pip install cv2.utils
+$ pip install cv2module
 ```
 
 
@@ -24,7 +24,7 @@ $ pip install cv2.utils
 
 - **Import as given below**
 ```python
-from cv2.utils import cmask
+from cv2module import cmask
 ```
 
 - **Parameters and returned values**
@@ -48,11 +48,11 @@ So take care when you are using the default dimensions, as they may lead to an e
 
 
 ## Resize Image
-To resize an image in OpenCV, cv2.resize function is used. However, you have to use your intuitions in a selection of width and height to maintain the aspect ratio. And sometimes it is hard to predict so by using `cv2.utils.resize` function you can simply specify width or else you can also specify both (width and height). So the control is in your hands.
+To resize an image in OpenCV, cv2.resize function is used. However, you have to use your intuitions in a selection of width and height to maintain the aspect ratio. And sometimes it is hard to predict so by using `cv2module.resize` function you can simply specify width or else you can also specify both (width and height). So the control is in your hands.
 
 **Example :**
 ```python
-image = resize(ip_image, 500)
+image = cv2module.resize(ip_image, 500)
 ```
 **Output :**
 <table>
@@ -61,8 +61,8 @@ image = resize(ip_image, 500)
   <th>Resized Image</th>
  </tr>
  <tr>
-  <td width="50%"><img alt="input img" src="./output/unresized_image.jpg"></td>
-  <td width="50%"><img alt="output img" height="100%" src="./output/resized_image.jpg"></td>
+  <td width="50%"><img alt="input img" src="https://github.com/Dhyeythumar/cv2module/blob/master/output/unresized_image.jpg"></td>
+  <td width="50%"><img alt="output img" height="100%" src="https://github.com/Dhyeythumar/cv2module/blob/master/output/resized_image.jpg"></td>
  </tr>
 </table>
 
@@ -73,13 +73,13 @@ image = resize(ip_image, 500)
 
 
 ## Rotate Image
-To rotate an image in OpenCV, cv2.getRotationMatrix2D and cv2.warpAffine is used. However, if you use these functions then you will lose some of the image parts. But by using `cv2.utils.rotate` you have the control over that loss.
+To rotate an image in OpenCV, cv2.getRotationMatrix2D and cv2.warpAffine is used. However, if you use these functions then you will lose some of the image parts. But by using `cv2module.rotate` you have the control over that loss.
 
 **Example :**
 ```python
     # loss = 0 means there is no loss of image while rotating it.
     # loss = 1 means there is a loss of image while rotating it.
-    res = rotate(ip_image, 40, loss=1)
+    res = cv2module.rotate(ip_image, 40, loss=1)
 ```
 <pre style="color:red;">The default value of the loss is 1 so it will crop out the image when it's been rotated.</pre>
 
@@ -90,8 +90,8 @@ To rotate an image in OpenCV, cv2.getRotationMatrix2D and cv2.warpAffine is used
   <th>loss = 1</th>
  </tr>
  <tr>
-  <td width="50%" height="400px" ><img alt="input img" src="./output/rotate_without_loss.jpg"></td>
-  <td width="50%" height="400px" align="center"><img alt="output img" height="100%" src="./output/rotate_with_loss.jpg"></td>
+  <td width="50%" height="400px" ><img alt="input img" src="https://github.com/Dhyeythumar/cv2module/blob/master/output/rotate_without_loss.jpg"></td>
+  <td width="50%" height="400px" align="center"><img alt="output img" height="100%" src="https://github.com/Dhyeythumar/cv2module/blob/master/output/rotate_with_loss.jpg"></td>
  </tr>
 </table>
 
@@ -102,7 +102,7 @@ To rotate an image in OpenCV, cv2.getRotationMatrix2D and cv2.warpAffine is used
 
 
 ## Generate Mask for Image
-Sometimes it is hard to predict the HSV bound for a given image. So, this is an example of how to create a mask from a particular color from an image. See the code given below, here we are reading a watch image and attempting to create a mask for the yellow color. The cmask (color mask) function is been imported from the cv2.utils. This function will open a window with the sliders to set the HSV bounds of your choice.
+Sometimes it is hard to predict the HSV bound for a given image. So, this is an example of how to create a mask from a particular color from an image. See the code given below, here we are reading a watch image and attempting to create a mask for the yellow color. The cmask (color mask) function is been imported from the cv2module. This function will open a window with the sliders to set the HSV bounds of your choice.
 
 **Example :**
 ```python
@@ -123,7 +123,7 @@ When you are done with selecting the values:
 - To save the mask and res image generated by the function click 's'.
 </pre>
 
-To view the full example [Refer](./examples/image_example.py).
+To view the full example [Refer](https://github.com/Dhyeythumar/cv2module/blob/master/examples/image_example.py).
 
 **Output :**
 <table>
@@ -132,8 +132,8 @@ To view the full example [Refer](./examples/image_example.py).
   <th>Output Image</th>
  </tr>
  <tr>
-  <td width="50%"><img alt="input img" src="./input/watch_image.jpg"></td>
-  <td width="50%"><img alt="output img" src="./output/resultant_watch_image.jpg"></td>
+  <td width="50%"><img alt="input img" src="https://github.com/Dhyeythumar/cv2module/blob/master/input/watch_image.jpg"></td>
+  <td width="50%"><img alt="output img" src="https://github.com/Dhyeythumar/cv2module/blob/master/output/resultant_watch_image.jpg"></td>
  </tr>
 </table>
 
@@ -169,12 +169,12 @@ After this webcam feed will remain ON and you have two choices as:
 - else click ESC or 'q' to exit.
 </pre>
 
-To view the full example [Refer](./examples/video_example.py).
+To view the full example [Refer](https://github.com/Dhyeythumar/cv2module/blob/master/examples/video_example.py).
 
 **Output :**<br/>
 The following is the resultant video captured by webcam. In this I'm holding the mobile with the green color on the screen.
 <p align="center">
-<img  alt="output video" src="./output/result_video.gif" width="50%">
+<img  alt="output video" src="https://github.com/Dhyeythumar/cv2module/blob/master/output/result_video.gif" width="50%">
 </p>
 
 <p style="font-weigth:700; font-size:18px;color:" align="center">
@@ -184,7 +184,7 @@ The following is the resultant video captured by webcam. In this I'm holding the
 
 
 ## Future Development
-I am planning to create different functions for this `cv2.utils` package such as cropping an image, creating a scanner, creating different haar cascades for different objects, etc.
+I am planning to create different functions for this `cv2module` such as cropping an image, creating a scanner, creating different haar cascades for different objects, etc.
 
 
 ## License
