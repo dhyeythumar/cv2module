@@ -1,10 +1,9 @@
 import cv2
 import numpy as np
-from color_filter import generate_mask as gen_mask
+from color_filter import cmask
 
 hsv_range = []
 redo = 1
-dim = (500, 800)
 
 cap = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -24,7 +23,7 @@ while True:
         # So create the new mask for each frame with hsv_range.
         # Redo is used to again create a mask and get the hsv_range for new frame.
         redo = 0
-        hsv_range, static_mask, static_res = gen_mask(frame, dim)
+        hsv_range, static_mask, static_res = cmask(frame)
     else:
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
         # hsv => hue sat value
