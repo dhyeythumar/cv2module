@@ -2,7 +2,7 @@
 # website:	http://dhyeythumar.github.io
 
 # set the version number
-__version__ = "0.1"
+__version__ = "0.1.1"
 
 # import the necessary packages
 from .color_filter import cmask

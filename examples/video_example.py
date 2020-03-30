@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from color_filter import cmask
+from cv2module import cmask
 
 hsv_range = []
 redo = 1

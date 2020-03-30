@@ -46,10 +46,6 @@ if __name__ == "__main__":
     image = cv2.imread("../input/watch_image.jpg")
 
     image = resize(image, 500)
-
-    # here loss = 0 means there is no loss of image while rotating it.
-    # Default value of loss is 1
-    # here loss = 1 means there is a loss of image while rotating it.
     res = rotate(image, 40, loss=1)
 
     cv2.imshow("Rotated", res)

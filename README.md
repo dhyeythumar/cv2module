@@ -43,7 +43,7 @@ So take care when you are using the default dimensions, as they may lead to an e
 
 <p style="font-weigth:700; font-size:18px;color:" align="center">
 <br/>
- •  •  •  • 
+&bull; &bull; &bull; &bull;
 </p>
 
 
@@ -68,7 +68,7 @@ image = cv2module.resize(ip_image, 500)
 
 <p style="font-weigth:700; font-size:18px;color:" align="center">
 <br/>
- •  •  •  • 
+&bull; &bull; &bull; &bull;
 </p>
 
 
@@ -97,7 +97,7 @@ To rotate an image in OpenCV, cv2.getRotationMatrix2D and cv2.warpAffine is used
 
 <p style="font-weigth:700; font-size:18px;color:" align="center">
 <br/>
- •  •  •  • 
+&bull; &bull; &bull; &bull;
 </p>
 
 
@@ -139,7 +139,7 @@ To view the full example [Refer](https://github.com/Dhyeythumar/cv2module/blob/m
 
 <p style="font-weigth:700; font-size:18px;color:" align="center">
 <br/>
- •  •  •  • 
+&bull; &bull; &bull; &bull;
 </p>
 
 
@@ -179,7 +179,7 @@ The following is the resultant video captured by webcam. In this I'm holding the
 
 <p style="font-weigth:700; font-size:18px;color:" align="center">
 <br/>
- •  •  •  • 
+&bull; &bull; &bull; &bull;
 </p>
 
 

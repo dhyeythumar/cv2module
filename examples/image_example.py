@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from color_filter import cmask
+from cv2module import cmask
 
 
 def resize(ip_image, width, height):
