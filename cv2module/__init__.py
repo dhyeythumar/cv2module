@@ -1,5 +1,5 @@
 # author:	Dhyey Thumar
-# website:	http://dhyeythumar.github.io
+# website:	https://dhyeythumar.github.io/my_portfolio/
 
 # set the version number
 __version__ = "0.1.2"
