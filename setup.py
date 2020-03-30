@@ -16,7 +16,7 @@ with open("README.md", "r") as fh:
 setup(
     name="cv2module",
     packages=["cv2module"],
-    version="0.1.1",
+    version="0.1.2",
     include_package_data=True,
     long_description=long_description,
     long_description_content_type="text/markdown",
