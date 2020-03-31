@@ -1,6 +1,6 @@
 # cv2module
 
-This is a package is created to assist the smooth workflow with OpenCV by providing essentials functions such as creating Color Masks of any image/video feed or resizing and rotating it.
+This package is created to assist the smooth workflow with OpenCV by providing essentials functions such as object detection and tracking for any image/video feed using color filtration and many more such functions.
  
 
 ## Installation
