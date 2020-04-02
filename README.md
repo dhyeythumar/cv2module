@@ -4,9 +4,13 @@ This package is created to assist the smooth workflow with OpenCV by providing e
  
 
 ## Installation
-Provided you already have NumPy and OpenCV installed, the `cv2module` a package can be simply installed using `pip`.
+Provided you already have NumPy and OpenCV installed, `cv2module` can be simply installed using `pip`.
 ```bash
 $ pip install cv2module
+```
+If you already have `cv2module` then upgrade it by this command.
+```bash
+$ pip install --upgrade cv2module
 ```
 
 
