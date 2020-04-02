@@ -1,4 +1,4 @@
-# cv2module
+# cv2module 0.1.2
 
 This package is created to assist the smooth workflow with OpenCV by providing essentials functions such as object detection and tracking for any image/video feed using color filtration and many more such functions.
  
